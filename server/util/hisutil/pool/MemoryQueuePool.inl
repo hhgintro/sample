@@ -167,7 +167,7 @@ namespace HisUtil {
 		memUsed_.pop();
 
 		if (IsAllocated())
-			memFree_.push(pT);
+			memLeak_.insert(pT);
 	}
 
 
