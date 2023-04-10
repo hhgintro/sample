@@ -1,0 +1,80 @@
+//protocol.txt
+/*
+	상수형은 모두 지원가능
+	상수형을 typedef 선언한 경우 PacketGenerator 모듈의 ArrayType[] 에 등록하면 상수로 초기화할 수 있습니다.
+	문자형은 CHAR, WCHAR, std::string, std::wstring 을 지원합니다.
+	구조체및 고정배열을 지원을 위해 CMsg을 구현하였습니다.
+	주석은 한줄을 할애하세요. 코드 뒤의 주석은 인지하지 못합니다.
+	
+	vector 지원합니다.
+	list는 아직 지원하지 않습니다. 추후 예정입니다.
+	
+	[encrypt] : 암호화 설정
+	
+	p.s.
+		후미 첨자 : REQ-요청패킷, ACK-응답패킷(one target), NTF-요청없이 전달패킷(Notify)
+*/
+
+global C2M 0xC000
+{
+	//서버 목록 요청
+	[encrypt] MT_SERVER_LIST_REQ()
+
+	//서버 목록 요청에 대한 응답
+	//	stRemoteEndpoint : 서버 정보
+	[encrypt] MT_SERVER_LIST_ACK(std::vector<stRemoteEndpoint> serverinfo)
+
+
+	//서버 추가 요청
+	[encrypt] MT_ADD_SERVER_REQ()
+
+	//서버 추가 요청에 대한 응답
+	//	stRemoteEndpoint : 서버 정보
+	[encrypt] MT_ADD_SERVER_ACK(std::vector<stRemoteEndpoint> serverinfo)
+
+
+	//서버 삭제 요청
+	[encrypt] MT_DELETE_SERVER_REQ()
+
+	//서버 삭제 요청에 대한 응답
+	//	remote : 삭제할 HostID
+	[encrypt] MT_DELETE_SERVER_ACK(HOSTID remote)
+
+
+
+	//서버 삭제 요청에 대한 응답
+	//	remote : 삭제할 HostID
+	[encrypt] MT_GAME_SERVER_INFO_NTF(std::vector<_stGameServerInfo> gameinfo)
+
+
+
+	//서버 status 변경 요청
+	//	remote : shutdown시킬 HostID
+	//	status : server 상태 (S_STATUS 참조)
+	[encrypt] MT_CHANGE_SERVER_STATUS_REQ(HOSTID remote, S_STATUS_T status)
+
+	//서버 status 변경 요청에 대한 응답
+	//	remote : shutdown시킬 HostID
+	//	status : server 상태 (S_STATUS 참조)
+	[encrypt] MT_CHANGE_SERVER_STATUS_ACK(HOSTID remote, S_STATUS_T status)
+
+
+	//서버 Launch 요청
+	//	_stLaunchServerInfo : launch 시킬 server정보
+	[encrypt] MT_SERVER_LAUNCH_REQ(std::vector<_stLaunchServerInfo> serverinfo)
+
+	//서버 Launch 요청에 대한 응답
+	//[encrypt] MT_SERVER_LAUNCH_ACK()
+
+	//서버 Shutdown 요청
+	//	_stLaunchServerInfo : shutdown 시킬 server정보
+	[encrypt] MT_SERVER_SHUTDOWN_REQ(std::vector<_stLaunchServerInfo> serverinfo)
+
+	//서버 Shutdown 요청에 대한 응답
+	//[encrypt] MT_SERVER_SHUTDOWN_ACK()
+
+
+	//서버 목록 초기화
+	[encrypt] MT_CLEAR_SERVER_LIST_NTF()
+
+};

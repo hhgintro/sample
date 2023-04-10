@@ -1,0 +1,86 @@
+<TYPE>
+
+  <!-- PacketCommon 폴더에 복사해서 사용한다. -->
+
+  <!-- 아래는 문자형 type을 나열하였다. -->
+  <String>
+    <std::string></std::string>
+    <std::wstring></std::wstring>
+    <HisUtil::TString></HisUtil::TString>
+  </String>
+
+  <!-- 아래는 숫자형 type을 나열하였다. -->
+  <Value>
+    <char></char>
+    <BYTE></BYTE>
+    <short></short>
+    <USHORT></USHORT>
+    <WORD></WORD>
+    <int></int>
+    <UINT></UINT>
+    <long></long>
+    <LONG></LONG>
+    <DWORD></DWORD>
+    <float></float>
+    <DOUBLE></DOUBLE>
+    <LONGLONG></LONGLONG>
+    <INT8></INT8>
+    <INT16></INT16>
+    <INT32></INT32>
+    <UINT8></UINT8>
+    <UINT16></UINT16>
+    <UINT32></UINT32>
+    <UINT64></UINT64>
+
+    <PacketID></PacketID>
+    <RESULT_T></RESULT_T>
+    <HOSTID></HOSTID>
+    <REMOTE_ENTRY_T></REMOTE_ENTRY_T>
+    <P2PGROUPID></P2PGROUPID>
+    <ADDR_IP></ADDR_IP>
+    <ADDR_PORT></ADDR_PORT>
+    <TIME_T></TIME_T>
+    <S_STATUS_T></S_STATUS_T>
+    <PROTOCOL_T></PROTOCOL_T>
+    <MONEY_T></MONEY_T> 
+    <ADMIN_LEVEL_T></ADMIN_LEVEL_T>
+    <ADMIN_STATUS_T></ADMIN_STATUS_T>
+    <CHECKING_SERVER_T></CHECKING_SERVER_T> 
+    <PACKET_CONTEXT></PACKET_CONTEXT>
+    <ACCOUNTPK></ACCOUNTPK>
+    <CHARPK></CHARPK>
+    <ZONEINDEX></ZONEINDEX>
+    <ZONECODE></ZONECODE>
+    <SECTORINDEX></SECTORINDEX>
+    <BATTLEINDEX></BATTLEINDEX>
+    <BATTLEPVPINDEX></BATTLEPVPINDEX>
+    <PARTYINDEX></PARTYINDEX>
+    <TRADEINDEX></TRADEINDEX>
+    <BOARDINDEX></BOARDINDEX>
+    <GAMEOBJECTID></GAMEOBJECTID>
+    <ANIINDEX></ANIINDEX>
+    <ACTION_T></ACTION_T>
+    <CHARCODE></CHARCODE>
+    <NPCCODE></NPCCODE>
+    <SKILLCODE></SKILLCODE>
+    <SKILLINDEX></SKILLINDEX>
+    <SKILLPK></SKILLPK>
+    <SHOPCODE></SHOPCODE>
+    <ITEMCODE></ITEMCODE>
+    <ITEMINDEX></ITEMINDEX>
+    <TURN_T></TURN_T>
+    <BATTLE_STATUS_T></BATTLE_STATUS_T>
+    <MOTION_T></MOTION_T>
+    <QUESTPK></QUESTPK>
+    <QUESTCODE></QUESTCODE>
+    <CHAT_TYPE_T></CHAT_TYPE_T>
+    <MAILPK></MAILPK>
+    <BATTLE_FORMATION_T></BATTLE_FORMATION_T>
+    <TUTORIAL_TYPE_T></TUTORIAL_TYPE_T>
+    <DISTRIBUTE_RULE_T></DISTRIBUTE_RULE_T>
+    <WORLD_MAP_T></WORLD_MAP_T>
+    <CHAR_GAME_OPTION_T></CHAR_GAME_OPTION_T>
+    <BATTLE_TYPE_T></BATTLE_TYPE_T>
+  </Value>
+
+</TYPE>

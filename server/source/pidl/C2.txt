@@ -1,0 +1,74 @@
+//protocol.txt
+/*
+	상수형은 모두 지원가능
+	상수형을 typedef 선언한 경우 PacketGenerator 모듈의 ArrayType[] 에 등록하면 상수로 초기화할 수 있습니다.
+	문자형은 CHAR, WCHAR, std::string, std::wstring 을 지원합니다.
+	구조체및 고정배열을 지원을 위해 CMsg을 구현하였습니다.
+	주석은 한줄을 할애하세요. 코드 뒤의 주석은 인지하지 못합니다.
+	
+	vector 지원합니다.
+	list는 아직 지원하지 않습니다. 추후 예정입니다.
+	
+	[encrypt] : 암호화 설정
+	
+	p.s.
+		후미 첨자 : REQ-요청패킷, ACK-응답패킷(one target), NTF-요청없이 전달패킷(Notify)
+*/
+
+global C2 0xB000
+{
+
+	//======================================
+	//	common
+	//======================================
+
+	//서버 status 변경 요청
+	//	remoteFrom : control서버의 는 host id
+	//	remoteTo : shutdown 시킬 서버의 host id
+	//	status : server 상태 (S_STATUS 참조)
+	[encrypt] UDP_CHANGE_SERVER_STATUS_REQ(HOSTID remoteFrom, HOSTID remoteTo, S_STATUS_T status)
+
+	//서버 status 변경 요청에 대한 응답
+	//	remoteFrom : control서버의 는 host id
+	//	remoteTo : shutdown 시킬 서버의 host id
+	//	status : server 상태 (S_STATUS 참조)
+	[encrypt] UDP_CHANGE_SERVER_STATUS_ACK(HOSTID remoteTo, S_STATUS_T status)
+
+
+
+	//======================================
+	//	login
+	//======================================
+
+
+	//======================================
+	//	balance
+	//======================================
+
+
+
+
+	//======================================
+	//	game
+	//======================================
+	
+	//자신(game 서버)의 갱신 정보를 일정시간마다 control 서버에게 전송한다.
+	//	_stGameServerInfo : 서버 정보
+	[udp] UDP_GAME_SERVER_INFO_NTF(std::vector<_stGameServerInfo> gameinfo)
+
+
+
+
+
+
+	//======================================
+	//	tool
+	//======================================
+
+
+
+
+
+
+
+};

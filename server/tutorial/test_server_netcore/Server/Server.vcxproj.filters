@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{8e4a6820-929e-4d19-b956-0741a266e212}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\tinyxml">
+      <UniqueIdentifier>{c701fb74-e892-4ce3-8a62-8e7886e9d873}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\netcore">
+      <UniqueIdentifier>{9d396ec6-3b71-48e5-bc07-cb88930100e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\hisutil">
+      <UniqueIdentifier>{73a73ce0-c878-437d-a450-dc53eed18558}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\hisutil\minidump">
+      <UniqueIdentifier>{fed9d026-dfb8-4c6b-b6f0-2a0d7a4dc2c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\hisutil\module">
+      <UniqueIdentifier>{96a44151-2668-4693-b826-8c218f9bc528}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\hisutil\service">
+      <UniqueIdentifier>{13a94877-9896-4831-adb6-1bb745f30ccd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\hisutil\thread">
+      <UniqueIdentifier>{73a93046-e620-4329-bf6b-d6152182017d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\hisutil\msg">
+      <UniqueIdentifier>{eb0e79fb-04b1-46ba-99c6-831bae110d20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\hisutil\crypt">
+      <UniqueIdentifier>{3ef8c592-167c-494f-bd6d-d6c5d0c3050a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\hisutil\etc">
+      <UniqueIdentifier>{e7e30f34-28bc-479a-89dc-8a5cd10481e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\hisutil\file">
+      <UniqueIdentifier>{5916d246-a1ad-494c-92c9-774cf1e8f20f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="config">
+      <UniqueIdentifier>{ec5145de-5feb-41d5-b310-e86e90426b48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\hisutil\eventlog">
+      <UniqueIdentifier>{767fd102-1ca6-44c6-a8f1-a99e77f4021b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="world.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\tinyxml\tinystr.h">
+      <Filter>util\tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\tinyxml\tinyxml.h">
+      <Filter>util\tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\netcore\netcore\remote.h">
+      <Filter>util\netcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\netcore\netcore\RemotePeer.h">
+      <Filter>util\netcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\netcore\netcore\RemoteSession.h">
+      <Filter>util\netcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\netcore\netcore\RemoteSessionManager.h">
+      <Filter>util\netcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\netcore\netcore\TcpClientSession.h">
+      <Filter>util\netcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\netcore\netcore\UdpClientSession.h">
+      <Filter>util\netcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\netcore\netcore\ClientSession.h">
+      <Filter>util\netcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\netcore\netcore\EventSelect.h">
+      <Filter>util\netcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\netcore\netcore\Iocp.h">
+      <Filter>util\netcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\netcore\netcore\netclient.h">
+      <Filter>util\netcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\netcore\netcore\netclientevent.h">
+      <Filter>util\netcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\netcore\netcore\netcore.h">
+      <Filter>util\netcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\netcore\netcore\netcore_include.h">
+      <Filter>util\netcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\netcore\netcore\NetIocp.h">
+      <Filter>util\netcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\netcore\netcore\NetServer.h">
+      <Filter>util\netcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\netcore\netcore\NetServerEvent.h">
+      <Filter>util\netcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\netcore\netcore\NetUdpIocp.h">
+      <Filter>util\netcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\netcore\netcore\NetworkSession.h">
+      <Filter>util\netcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\netcore\netcore\P2PGroup.h">
+      <Filter>util\netcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\netcore\netcore\PacketSession.h">
+      <Filter>util\netcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\hisutil\etc\string.h">
+      <Filter>util\hisutil\etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\hisutil\file\IniLoader.h">
+      <Filter>util\hisutil\file</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\hisutil\log\eventlog.h">
+      <Filter>util\hisutil\eventlog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\hisutil\minidump\CrashHandler.h">
+      <Filter>util\hisutil\minidump</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\hisutil\module\module.h">
+      <Filter>util\hisutil\module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\hisutil\msg\msg.h">
+      <Filter>util\hisutil\msg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\hisutil\service\ServiceRegister.h">
+      <Filter>util\hisutil\service</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\hisutil\thread\Thread.h">
+      <Filter>util\hisutil\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Server.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Param.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\netcore\netcore\PacketBuffer.h">
+      <Filter>util\netcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\netcore\netcore\PoolBuffer.h">
+      <Filter>util\netcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\hisutil\crypt\Crypto.h">
+      <Filter>util\hisutil\crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\hisutil\thread\HisCritSec.h">
+      <Filter>util\hisutil\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\hisutil\etc\net.h">
+      <Filter>util\hisutil\etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\hisutil\etc\util.h">
+      <Filter>util\hisutil\etc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="RecvX.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="world.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\tinyxml\tinystr.cpp">
+      <Filter>util\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\tinyxml\tinyxml.cpp">
+      <Filter>util\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\tinyxml\tinyxmlerror.cpp">
+      <Filter>util\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\tinyxml\tinyxmlparser.cpp">
+      <Filter>util\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\netcore\netcore\RecvClientCore.cpp">
+      <Filter>util\netcore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\netcore\netcore\RecvServerCore.cpp">
+      <Filter>util\netcore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\netcore\netcore\RecvUdpClientCore.cpp">
+      <Filter>util\netcore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\netcore\netcore\RecvUdpServerCore.cpp">
+      <Filter>util\netcore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\netcore\netcore\RemoteSession.cpp">
+      <Filter>util\netcore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\netcore\netcore\RemoteSessionManager.cpp">
+      <Filter>util\netcore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\netcore\netcore\TcpClientSession.cpp">
+      <Filter>util\netcore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\netcore\netcore\UdpClientSession.cpp">
+      <Filter>util\netcore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\netcore\netcore\ClientSession.cpp">
+      <Filter>util\netcore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\netcore\netcore\EventSelect.cpp">
+      <Filter>util\netcore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\netcore\netcore\Iocp.cpp">
+      <Filter>util\netcore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\netcore\netcore\NetClient.cpp">
+      <Filter>util\netcore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\netcore\netcore\NetClientEvent.cpp">
+      <Filter>util\netcore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\netcore\netcore\NetIocp.cpp">
+      <Filter>util\netcore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\netcore\netcore\NetServer.cpp">
+      <Filter>util\netcore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\netcore\netcore\NetServerEvent.cpp">
+      <Filter>util\netcore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\netcore\netcore\NetUdpIocp.cpp">
+      <Filter>util\netcore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\netcore\netcore\NetworkSession.cpp">
+      <Filter>util\netcore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\netcore\netcore\P2PGroup.cpp">
+      <Filter>util\netcore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\netcore\netcore\PacketSession.cpp">
+      <Filter>util\netcore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\hisutil\etc\string.cpp">
+      <Filter>util\hisutil\etc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\hisutil\file\IniLoader.cpp">
+      <Filter>util\hisutil\file</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\hisutil\log\eventlog.cpp">
+      <Filter>util\hisutil\eventlog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\hisutil\minidump\CrashHandler.cpp">
+      <Filter>util\hisutil\minidump</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\hisutil\module\module.cpp">
+      <Filter>util\hisutil\module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\hisutil\msg\msg.cpp">
+      <Filter>util\hisutil\msg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\hisutil\service\ServiceRegister.cpp">
+      <Filter>util\hisutil\service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\hisutil\thread\Thread.cpp">
+      <Filter>util\hisutil\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="Server.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Param.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\netcore\netcore\PacketBuffer.cpp">
+      <Filter>util\netcore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\netcore\netcore\PoolBuffer.cpp">
+      <Filter>util\netcore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\hisutil\crypt\Crypto.cpp">
+      <Filter>util\hisutil\crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\hisutil\thread\HisCritSec.cpp">
+      <Filter>util\hisutil\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\hisutil\etc\net.cpp">
+      <Filter>util\hisutil\etc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\hisutil\etc\util.cpp">
+      <Filter>util\hisutil\etc</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\bin\config\logConfig.xml">
+      <Filter>config</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\bin\config\TestServer.ini">
+      <Filter>config</Filter>
+    </None>
+  </ItemGroup>
+</Project>

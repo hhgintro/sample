@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{8e4a6820-929e-4d19-b956-0741a266e212}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\tinyxml">
+      <UniqueIdentifier>{c701fb74-e892-4ce3-8a62-8e7886e9d873}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\hisutil">
+      <UniqueIdentifier>{73a73ce0-c878-437d-a450-dc53eed18558}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\hisutil\msg">
+      <UniqueIdentifier>{eb0e79fb-04b1-46ba-99c6-831bae110d20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\hisutil\log">
+      <UniqueIdentifier>{cdb46c2e-c88b-4b58-80b9-1a0776159373}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\hisutil\thread">
+      <UniqueIdentifier>{83b60811-7282-431b-a8a6-a5eb284f4881}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\hisutil\module">
+      <UniqueIdentifier>{ad48a85f-e1ba-4f65-a045-2430f3bce807}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\hisutil\etc">
+      <UniqueIdentifier>{e6f1fe66-8c7f-4280-9536-d51992048cb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\netcore">
+      <UniqueIdentifier>{4549b73d-90d0-480a-8dbe-fd167c3b6665}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\util\tinyxml\tinystr.h">
+      <Filter>util\tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\util\tinyxml\tinyxml.h">
+      <Filter>util\tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\util\hisutil\msg\msg.h">
+      <Filter>util\hisutil\msg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\util\hisutil\log\eventlog.h">
+      <Filter>util\hisutil\log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\util\hisutil\thread\Thread.h">
+      <Filter>util\hisutil\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\util\hisutil\module\module.h">
+      <Filter>util\hisutil\module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\util\hisutil\etc\string.h">
+      <Filter>util\hisutil\etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\util\netcore\netcore\PacketBuffer.h">
+      <Filter>util\netcore</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\util\tinyxml\tinystr.cpp">
+      <Filter>util\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\util\tinyxml\tinyxml.cpp">
+      <Filter>util\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\util\tinyxml\tinyxmlerror.cpp">
+      <Filter>util\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\util\tinyxml\tinyxmlparser.cpp">
+      <Filter>util\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\util\hisutil\msg\msg.cpp">
+      <Filter>util\hisutil\msg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\util\hisutil\log\eventlog.cpp">
+      <Filter>util\hisutil\log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\util\hisutil\thread\Thread.cpp">
+      <Filter>util\hisutil\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\util\hisutil\module\module.cpp">
+      <Filter>util\hisutil\module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\util\hisutil\etc\string.cpp">
+      <Filter>util\hisutil\etc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\util\netcore\netcore\PacketBuffer.cpp">
+      <Filter>util\netcore</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

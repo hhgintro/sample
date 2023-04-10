@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="hisutil">
+      <UniqueIdentifier>{de05c11d-ec48-4d5d-8266-7cccb0a9209f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hisutil\module">
+      <UniqueIdentifier>{395dbeb1-ec74-4969-98fa-a7fd78558b1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hisutil\etc">
+      <UniqueIdentifier>{715cc878-02b1-41b9-a026-3dacfd4c5013}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="..\LuaTest\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hisutil\module\module.h">
+      <Filter>hisutil\module</Filter>
+    </ClInclude>
+    <ClInclude Include="FileLoader.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hisutil\etc\string.h">
+      <Filter>hisutil\etc</Filter>
+    </ClInclude>
+    <ClInclude Include="CommentOption.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hisutil\etc\util.h">
+      <Filter>hisutil\etc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hisutil\module\module.cpp">
+      <Filter>hisutil\module</Filter>
+    </ClCompile>
+    <ClCompile Include="FileLoader.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hisutil\etc\string.cpp">
+      <Filter>hisutil\etc</Filter>
+    </ClCompile>
+    <ClCompile Include="CommentOption.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hisutil\etc\util.cpp">
+      <Filter>hisutil\etc</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,13 @@
+DELIMITER $$
+DROP PROCEDURE IF EXISTS `sp_city_select`$$
+CREATE PROCEDURE `sp_city_select`(i_name varchar(10), i_pass varchar(10))
+BEGIN
+
+	DECLARE id int default 90;
+
+	select id + 1 as id, 'name_1' as name;
+	select id + 2 as id, 'name_2' as name;
+	select id + 3 as id, 'name_3' as name;
+    
+END$$
+DELIMITER ;

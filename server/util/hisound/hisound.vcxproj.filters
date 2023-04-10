@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="sound">
+      <UniqueIdentifier>{cce8065c-33a2-4b5c-800b-2763e3520c33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{a7b274a7-e301-4d21-ba99-aeeb06c2e4be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\hisutil">
+      <UniqueIdentifier>{a3bad9e5-1afc-4d1d-b567-79372eb13de8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\hisutil\pool">
+      <UniqueIdentifier>{4de02833-2453-44a5-8a36-cb1b36a1650c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\hisutil\thread">
+      <UniqueIdentifier>{23e70af9-effe-41b5-aee0-a0526c3df833}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sound\DispatchSound.h">
+      <Filter>sound</Filter>
+    </ClInclude>
+    <ClInclude Include="sound\SoundCapture.h">
+      <Filter>sound</Filter>
+    </ClInclude>
+    <ClInclude Include="sound\SoundPrimary.h">
+      <Filter>sound</Filter>
+    </ClInclude>
+    <ClInclude Include="sound\SoundSecondary.h">
+      <Filter>sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hisutil\thread\HisCritSec.h">
+      <Filter>util\hisutil\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hisutil\thread\Singleton.h">
+      <Filter>util\hisutil\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hisutil\pool\MemoryPool.h">
+      <Filter>util\hisutil\pool</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sound\DispatchSound.cpp">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="sound\SoundCapture.cpp">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="sound\SoundPrimary.cpp">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="sound\SoundSecondary.cpp">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hisutil\thread\HisCritSec.cpp">
+      <Filter>util\hisutil\thread</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

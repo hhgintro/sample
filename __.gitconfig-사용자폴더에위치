@@ -1,0 +1,32 @@
+[user]
+	email = hhg@gmail.com
+	name = hhg
+
+[color]
+    ui = auto
+
+[gui]
+	encoding = utf-8
+
+[core]
+    quotepath = false
+
+[difftool "araxis"]
+    path = "C:\\Program Files (x86)\\Araxis\\Araxis Merge\\compare.exe"
+    renames = true
+    trustExitCode = true
+
+[diff]
+    tool = araxis
+    stat = true
+
+[mergetool "araxismergetool"]
+    cmd = "C:\\Program Files (x86)\\Araxis\\Araxis Merge\\AraxisGitMerge.exe" "$REMOTE" "$BASE" "$PWD/$LOCAL" "$PWD/$MERGED"
+    trustExitCode = false
+
+[mergetool]
+    keepBackup = false
+
+[merge]
+    tool = araxismergetool
+    stat = true

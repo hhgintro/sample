@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{971129ba-1759-4cd1-b1c2-3c41208c5da8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\netcore">
+      <UniqueIdentifier>{d1b7163c-8449-4214-bd23-823d8e15d146}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\netcore\ClientSession.cpp">
+      <Filter>util\netcore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\netcore\EventSelect.cpp">
+      <Filter>util\netcore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\netcore\Iocp.cpp">
+      <Filter>util\netcore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\netcore\NetClient.cpp">
+      <Filter>util\netcore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\netcore\NetClientEvent.cpp">
+      <Filter>util\netcore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\netcore\NetIocp.cpp">
+      <Filter>util\netcore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\netcore\NetServer.cpp">
+      <Filter>util\netcore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\netcore\NetServerEvent.cpp">
+      <Filter>util\netcore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\netcore\NetUdpIocp.cpp">
+      <Filter>util\netcore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\netcore\NetworkSession.cpp">
+      <Filter>util\netcore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\netcore\P2PGroup.cpp">
+      <Filter>util\netcore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\netcore\PacketBuffer.cpp">
+      <Filter>util\netcore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\netcore\PacketSession.cpp">
+      <Filter>util\netcore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\netcore\PoolBuffer.cpp">
+      <Filter>util\netcore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\netcore\RecvClientCore.cpp">
+      <Filter>util\netcore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\netcore\RecvServerCore.cpp">
+      <Filter>util\netcore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\netcore\RecvUdpClientCore.cpp">
+      <Filter>util\netcore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\netcore\RecvUdpServerCore.cpp">
+      <Filter>util\netcore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\netcore\RemoteSession.cpp">
+      <Filter>util\netcore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\netcore\RemoteSessionManager.cpp">
+      <Filter>util\netcore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\netcore\TcpClientSession.cpp">
+      <Filter>util\netcore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\netcore\UdpClientSession.cpp">
+      <Filter>util\netcore</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\netcore\ClientSession.h">
+      <Filter>util\netcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\netcore\EventSelect.h">
+      <Filter>util\netcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\netcore\Iocp.h">
+      <Filter>util\netcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\netcore\netclient.h">
+      <Filter>util\netcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\netcore\netclientevent.h">
+      <Filter>util\netcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\netcore\netcore.h">
+      <Filter>util\netcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\netcore\netcore_include.h">
+      <Filter>util\netcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\netcore\NetIocp.h">
+      <Filter>util\netcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\netcore\NetServer.h">
+      <Filter>util\netcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\netcore\NetServerEvent.h">
+      <Filter>util\netcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\netcore\NetUdpIocp.h">
+      <Filter>util\netcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\netcore\NetworkSession.h">
+      <Filter>util\netcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\netcore\P2PGroup.h">
+      <Filter>util\netcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\netcore\PacketBuffer.h">
+      <Filter>util\netcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\netcore\PacketSession.h">
+      <Filter>util\netcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\netcore\PoolBuffer.h">
+      <Filter>util\netcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\netcore\remote.h">
+      <Filter>util\netcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\netcore\RemotePeer.h">
+      <Filter>util\netcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\netcore\RemoteSession.h">
+      <Filter>util\netcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\netcore\RemoteSessionManager.h">
+      <Filter>util\netcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\netcore\TcpClientSession.h">
+      <Filter>util\netcore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\netcore\UdpClientSession.h">
+      <Filter>util\netcore</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

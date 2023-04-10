@@ -1,0 +1,11 @@
+DELIMITER $$
+DROP TABLE IF EXISTS `tblAccount`$$
+CREATE TABLE `tblAccount` (
+	accountPK int unsigned not null auto_increment
+	,account varchar(50) not null
+	,nickname varchar(50) not null
+	,password varchar(50) not null
+	,createtime timestamp
+	,PRIMARY KEY(accountPK)
+)$$
+DELIMITER ;

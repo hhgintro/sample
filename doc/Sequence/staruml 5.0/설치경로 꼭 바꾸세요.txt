@@ -1,0 +1,8 @@
+new버전 start-uml과 같이 설치시에 꼬입니다.
+
+기존:
+C:\Program Files (x86)\StarUML
+
+
+변경: (5.0)표기할것
+C:\Program Files (x86)\StarUML5.0

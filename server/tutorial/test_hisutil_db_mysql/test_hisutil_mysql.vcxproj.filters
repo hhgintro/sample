@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{fc295af7-92ed-4f72-83d6-b92bce271ef3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\hisutil">
+      <UniqueIdentifier>{c0dc9f7f-5df1-4499-8078-c7e1061780b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\hisutil\db">
+      <UniqueIdentifier>{9cbce63d-f538-4b4a-9c69-140e52ade2c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\hisutil\module">
+      <UniqueIdentifier>{d8176f3c-fed9-4f8c-b7f2-e0ec86a42788}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\hisutil\db\db_schema">
+      <UniqueIdentifier>{2b6f0ea3-a660-4d17-94bd-fe19a969a503}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\hisutil\db\db_schema\sp">
+      <UniqueIdentifier>{dd70e524-f8b4-465d-a723-10c879527e97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\hisutil\db\db_schema\table">
+      <UniqueIdentifier>{cb7f7355-106c-4671-963d-9f0e86d12256}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+    <Text Include="db schema\table\test_table.txt">
+      <Filter>util\hisutil\db\db_schema\table</Filter>
+    </Text>
+    <Text Include="db schema\sp\test_sp.txt">
+      <Filter>util\hisutil\db\db_schema\sp</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\util\hisutil\db\SPBase.h">
+      <Filter>util\hisutil\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\util\hisutil\module\module.h">
+      <Filter>util\hisutil\module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\util\hisutil\db\dbconnect.h">
+      <Filter>util\hisutil\db</Filter>
+    </ClInclude>
+    <ClInclude Include="sp_mssql.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="sp_mysql.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\util\hisutil\db\SPBase.cpp">
+      <Filter>util\hisutil\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\util\hisutil\module\module.cpp">
+      <Filter>util\hisutil\module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\util\hisutil\db\dbconnect.cpp">
+      <Filter>util\hisutil\db</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

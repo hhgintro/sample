@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="..\..\util\hisutil\thread\HisCritSec.cpp">
+      <Filter>util\hisutil\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="sound\SoundSecondary.cpp">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="sound\SoundPrimary.cpp">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="sound\DispatchSound.cpp">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="sound\SoundCapture.cpp">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="sound\DispatchCapture.cpp">
+      <Filter>sound</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="..\..\util\hisutil\pool\MemoryQueuePool.h">
+      <Filter>util\hisutil\pool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\util\hisutil\thread\HisCritSec.h">
+      <Filter>util\hisutil\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="sound\SoundSecondary.h">
+      <Filter>sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\util\hisutil\thread\Singleton.h">
+      <Filter>util\hisutil\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\util\hisutil\pool\MemoryPool.h">
+      <Filter>util\hisutil\pool</Filter>
+    </ClInclude>
+    <ClInclude Include="sound\SoundPrimary.h">
+      <Filter>sound</Filter>
+    </ClInclude>
+    <ClInclude Include="sound\DispatchSound.h">
+      <Filter>sound</Filter>
+    </ClInclude>
+    <ClInclude Include="sound\SoundCapture.h">
+      <Filter>sound</Filter>
+    </ClInclude>
+    <ClInclude Include="sound\DispatchCapture.h">
+      <Filter>sound</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="sound">
+      <UniqueIdentifier>{c4acbf9a-6e00-4ec7-a6b8-6435d0aa5dcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{937d0384-de46-46cf-b586-d0245b09ec87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\hisutil">
+      <UniqueIdentifier>{00669957-34ef-486d-9bdd-25aa7c87fb61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\hisutil\pool">
+      <UniqueIdentifier>{177e23f1-76ce-4296-9c20-841be5ffbeed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\hisutil\thread">
+      <UniqueIdentifier>{8c843e1b-4a95-4c9d-8844-ed7357d42293}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

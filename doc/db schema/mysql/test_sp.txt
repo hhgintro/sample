@@ -1,0 +1,8 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_city_select`(i_id int, i_char varchar(10))
+BEGIN
+	select * from city where id = i_id;
+	select * from city where id = i_id+1;
+	select * from city where id = i_id+2;
+	select i_id + length(i_char)*100 as o_id, i_char as o_char;
+    
+END

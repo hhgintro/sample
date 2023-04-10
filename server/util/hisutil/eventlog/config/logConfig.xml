@@ -1,0 +1,67 @@
+<Log>
+  <!-- 예문
+  Name : 키워드
+  console : 콘솔창 출력 유무
+  file : 파일 기록 유무
+  debug : 디버깅창 출력 유무
+  color : console 창 출력시 색 설정
+  
+  <Name console ="1" file="2" debug="3" color ="4">사용처를 간단히 적으세요</Name>
+  
+enum COLOR_ID
+{
+	WHITE_ON_BLACK,		//검은바탕에 흰색
+	RED_ON_BLACK,
+	GREEN_ON_BLACK,
+	YELLOW_ON_BLACK,
+	BLUE_ON_BLACK,
+	MAGENTA_ON_BLACK,	//분홍
+	CYAN_ON_BLACK,		//하늘
+	GRAY_ON_BLACK,		//회색
+	BLACK_ON_GRAY,		//회색바탕에 검정
+	BLACK_ON_WHITE,
+	RED_ON_WHITE,
+	GREEN_WHITE,
+	YELLOW_ON_WHITE,
+	BLUE_ON_WHITE,
+	MAGENTA_ON_WHITE,
+	CYAN_ON_WHITE,
+	WHITE_ON_WHITE,
+}
+
+  -->
+
+  <Critical_Error console ="1" file="1" debug="0" color ="1">심각한 오류 처리</Critical_Error>
+  <Critical_Msg_Error console ="1" file="1" debug="0" color ="1">CMsg 데이타 오류 처리</Critical_Msg_Error>
+
+
+  <!--
+  <Network_Base_Core_Info console ="0" file="1" debug="0" color ="7">네트워크 관련 메시지 처리</Network_Base_Core_Info>
+  -->
+  <Network_Base_Core_Error console ="1" file="1" debug="0" color ="1">네트워크 관련 메시지 처리</Network_Base_Core_Error>
+
+  <!--
+  <Session_Base_Info console ="0" file="1" debug="0" color ="7">네트워크 관련 메시지 처리</Session_Base_Info>
+  -->
+  <Session_Base_Error console ="1" file="1" debug="0" color ="1">네트워크 관련 메시지 처리</Session_Base_Error>
+
+  <Session_Base_Packet console ="1" file="1" debug="0" color ="4">네트워크 관련 메시지 처리</Session_Base_Packet>
+
+
+  <!--
+  <CCircularQueue_Info console ="0" file="1" debug="0" color ="7">네트워크 관련 메시지 처리</CCircularQueue_Info>
+  <CPoolBuffer_Info console ="0" file="1" debug="0" color ="7">네트워크 관련 메시지 처리</CPoolBuffer_Info>
+  -->
+  <CPoolBuffer_Error console ="1" file="1" debug="0" color ="1">네트워크 관련 메시지 처리</CPoolBuffer_Error>
+
+
+  <HG_WHITE console ="1" file="1" debug="0" color ="0">네트워크 관련 메시지 처리</HG_WHITE>
+  <HG_RED console ="1" file="1" debug="0" color ="1">네트워크 관련 메시지 처리</HG_RED>
+  <HG_GREEN console ="1" file="1" debug="0" color ="2">네트워크 관련 메시지 처리</HG_GREEN>
+  <HG_YELLOW console ="1" file="1" debug="0" color ="3">네트워크 관련 메시지 처리</HG_YELLOW>
+  <HG_BLUE console ="1" file="1" debug="0" color ="4">네트워크 관련 메시지 처리</HG_BLUE>
+  <HG_MAGENTA console ="1" file="1" debug="0" color ="5">네트워크 관련 메시지 처리</HG_MAGENTA>
+  <HG_CYAN console ="1" file="1" debug="0" color ="6">네트워크 관련 메시지 처리</HG_CYAN>
+  <HG_GRAY console ="1" file="1" debug="0" color ="7">네트워크 관련 메시지 처리</HG_GRAY>
+
+</Log>

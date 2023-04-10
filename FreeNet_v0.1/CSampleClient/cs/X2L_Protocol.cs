@@ -1,0 +1,19 @@
+namespace X2L
+{
+	public class PT
+	{
+		static public uint PT_VERSION = 20211229;
+	};
+
+	public enum PROTOCOL : ushort
+	{
+		X2L_AC_REGIST_REQ			= 0x1000,
+		X2L_AC_REGIST_ACK			= 0x1001,
+		X2L_AC_LOGIN_REQ			= 0x1002,
+		X2L_AC_LOGIN_ACK			= 0x1003,
+		X2L_AC_DUPLICATE_CHECK_REQ			= 0x1004,
+		X2L_AC_DUPLICATE_CHECK_ACK			= 0x1005,
+		X2L_AC_RECOMMENDER_CHECK_REQ			= 0x1006,
+		X2L_AC_RECOMMENDER_CHECK_ACK			= 0x1007,
+	}
+}

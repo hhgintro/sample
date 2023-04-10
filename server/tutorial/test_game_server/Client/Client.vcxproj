@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1DEF64D8-0456-4992-B01F-FFAFE4AC2945}</ProjectGuid>
+    <RootNamespace>Client</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>Client</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.61030.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>../bin/</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>../bin/</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions>-Zm150 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions>-Zm150 %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\util\hisutil\crypt\Crypto.cpp" />
+    <ClCompile Include="..\..\..\util\hisutil\etc\net.cpp" />
+    <ClCompile Include="..\..\..\util\hisutil\etc\string.cpp" />
+    <ClCompile Include="..\..\..\util\hisutil\log\eventlog.cpp" />
+    <ClCompile Include="..\..\..\util\hisutil\module\module.cpp" />
+    <ClCompile Include="..\..\..\util\hisutil\msg\msg.cpp" />
+    <ClCompile Include="..\..\..\util\hisutil\thread\HisCritSec.cpp" />
+    <ClCompile Include="..\..\..\util\hisutil\thread\Thread.cpp" />
+    <ClCompile Include="..\..\..\util\netcore\netcore\ClientSession.cpp" />
+    <ClCompile Include="..\..\..\util\netcore\netcore\EventSelect.cpp" />
+    <ClCompile Include="..\..\..\util\netcore\netcore\Iocp.cpp" />
+    <ClCompile Include="..\..\..\util\netcore\netcore\NetClient.cpp" />
+    <ClCompile Include="..\..\..\util\netcore\netcore\NetClientEvent.cpp" />
+    <ClCompile Include="..\..\..\util\netcore\netcore\NetIocp.cpp" />
+    <ClCompile Include="..\..\..\util\netcore\netcore\NetServer.cpp" />
+    <ClCompile Include="..\..\..\util\netcore\netcore\NetServerEvent.cpp" />
+    <ClCompile Include="..\..\..\util\netcore\netcore\NetUdpIocp.cpp" />
+    <ClCompile Include="..\..\..\util\netcore\netcore\NetworkSession.cpp" />
+    <ClCompile Include="..\..\..\util\netcore\netcore\P2PGroup.cpp" />
+    <ClCompile Include="..\..\..\util\netcore\netcore\PacketBuffer.cpp" />
+    <ClCompile Include="..\..\..\util\netcore\netcore\PacketSession.cpp" />
+    <ClCompile Include="..\..\..\util\netcore\netcore\PoolBuffer.cpp" />
+    <ClCompile Include="..\..\..\util\netcore\netcore\RecvClientCore.cpp" />
+    <ClCompile Include="..\..\..\util\netcore\netcore\RecvServerCore.cpp" />
+    <ClCompile Include="..\..\..\util\netcore\netcore\RecvUdpClientCore.cpp" />
+    <ClCompile Include="..\..\..\util\netcore\netcore\RecvUdpServerCore.cpp" />
+    <ClCompile Include="..\..\..\util\netcore\netcore\RemoteSession.cpp" />
+    <ClCompile Include="..\..\..\util\netcore\netcore\RemoteSessionManager.cpp" />
+    <ClCompile Include="..\..\..\util\netcore\netcore\TcpClientSession.cpp" />
+    <ClCompile Include="..\..\..\util\netcore\netcore\UdpClientSession.cpp" />
+    <ClCompile Include="..\..\..\util\tinyxml\tinystr.cpp" />
+    <ClCompile Include="..\..\..\util\tinyxml\tinyxml.cpp" />
+    <ClCompile Include="..\..\..\util\tinyxml\tinyxmlerror.cpp" />
+    <ClCompile Include="..\..\..\util\tinyxml\tinyxmlparser.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="ClientWorld.cpp" />
+    <ClCompile Include="GameClient.cpp" />
+    <ClCompile Include="RecvGame.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\util\hisutil\crypt\Crypto.h" />
+    <ClInclude Include="..\..\..\util\hisutil\etc\net.h" />
+    <ClInclude Include="..\..\..\util\hisutil\etc\string.h" />
+    <ClInclude Include="..\..\..\util\hisutil\log\eventlog.h" />
+    <ClInclude Include="..\..\..\util\hisutil\module\module.h" />
+    <ClInclude Include="..\..\..\util\hisutil\msg\msg.h" />
+    <ClInclude Include="..\..\..\util\hisutil\thread\HisCritSec.h" />
+    <ClInclude Include="..\..\..\util\hisutil\thread\Thread.h" />
+    <ClInclude Include="..\..\..\util\netcore\netcore\ClientSession.h" />
+    <ClInclude Include="..\..\..\util\netcore\netcore\EventSelect.h" />
+    <ClInclude Include="..\..\..\util\netcore\netcore\Iocp.h" />
+    <ClInclude Include="..\..\..\util\netcore\netcore\netclient.h" />
+    <ClInclude Include="..\..\..\util\netcore\netcore\netclientevent.h" />
+    <ClInclude Include="..\..\..\util\netcore\netcore\NetIocp.h" />
+    <ClInclude Include="..\..\..\util\netcore\netcore\NetServer.h" />
+    <ClInclude Include="..\..\..\util\netcore\netcore\NetServerEvent.h" />
+    <ClInclude Include="..\..\..\util\netcore\netcore\NetUdpIocp.h" />
+    <ClInclude Include="..\..\..\util\netcore\netcore\NetworkSession.h" />
+    <ClInclude Include="..\..\..\util\netcore\netcore\P2PGroup.h" />
+    <ClInclude Include="..\..\..\util\netcore\netcore\PacketBuffer.h" />
+    <ClInclude Include="..\..\..\util\netcore\netcore\PacketSession.h" />
+    <ClInclude Include="..\..\..\util\netcore\netcore\PoolBuffer.h" />
+    <ClInclude Include="..\..\..\util\netcore\netcore\RemoteSession.h" />
+    <ClInclude Include="..\..\..\util\netcore\netcore\RemoteSessionManager.h" />
+    <ClInclude Include="..\..\..\util\netcore\netcore\TcpClientSession.h" />
+    <ClInclude Include="..\..\..\util\netcore\netcore\UdpClientSession.h" />
+    <ClInclude Include="..\..\..\util\tinyxml\tinystr.h" />
+    <ClInclude Include="..\..\..\util\tinyxml\tinyxml.h" />
+    <ClInclude Include="ClientWorld.h" />
+    <ClInclude Include="GameClient.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="ZoneManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

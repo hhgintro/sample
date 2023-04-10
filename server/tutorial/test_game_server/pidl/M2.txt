@@ -1,0 +1,70 @@
+//protocol.txt
+/*
+	상수형은 모두 지원가능
+	상수형을 typedef 선언한 경우 PacketGenerator 모듈의 ArrayType[] 에 등록하면 상수로 초기화할 수 있습니다.
+	문자형은 CHAR, WCHAR, std::string, std::wstring 을 지원합니다.
+	구조체및 고정배열을 지원을 위해 CMsg을 구현하였습니다.
+	주석은 한줄을 할애하세요. 코드 뒤의 주석은 인지하지 못합니다.
+	
+	vector 지원합니다.
+	list는 아직 지원하지 않습니다. 추후 예정입니다.
+	
+	[encrypt] : 암호화 설정
+	[id=1000] : protocol id설정
+
+	p.s.
+		후미 첨자 : REQ-요청패킷, ACK-응답패킷(one target), NTF-요청없이 전달패킷(Notify)
+		[id=0x1234,udp,encrypt] 순서 준수할 것
+*/
+
+
+global M2 0x2000
+{
+	BD_VOICE_CHAT_REQ(std::wstring chat)
+	BD_VOICE_CHAT_ACK(std::wstring chat)
+
+
+	//로그인 요청
+	//	account : 계정명
+	//	password : 인증키(password)
+	//	remoteX : 접속 유저의 host id
+	AC_LOGIN_REQ(std::wstring account, std::wstring password, HOSTID remoteX)
+
+	//로그인 요청에 대한 응답
+	//	result : 응답 결과값
+	//	remoteX : 접속 유저의 host id
+	//	accountpk : 계정 고유 인덱스 PK
+	//	account : 계정명
+	AC_LOGIN_ACK(RESULT_T result, HOSTID remoteX, ACCOUNTPK accountpk, std::wstring account)
+
+
+
+
+	//장착 정보 요청
+	//	remoteX : 접속 유저의 host id
+	//	accountpk : 계정 식별자(pk)
+	IN_EQUIP_LOAD_REQ(HOSTID remoteX, ACCOUNTPK accountpk)
+
+	//장착 정보 요청에 대한 응답
+	//	remoteX : 접속 유저의 host id
+	//	inven : 장착및 인벤정보
+	IN_EQUIP_LOAD_ACK(HOSTID remoteX, stInven inven)
+
+
+
+
+	//장착 정보 변경 요청
+	//	remoteX : 접속 유저의 host id
+	//	accountpk : 계정 식별자(pk)
+	//	inven : 장착및 인벤정보
+	IN_EQUIP_UPDATE_REQ(HOSTID remoteX, ACCOUNTPK accountpk, stInven inven)
+
+	//장착 정보 변경 요청에 대한 응답
+	//	remoteX : 접속 유저의 host id
+	//	result : 응답 결과값
+	//	inven : 장착및 인벤정보
+	IN_EQUIP_UPDATE_ACK(HOSTID remoteX, RESULT_T result, stInven inven)
+
+
+
+};

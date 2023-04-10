@@ -1,0 +1,55 @@
+//protocol.txt
+/*
+	상수형은 모두 지원가능
+	상수형을 typedef 선언한 경우 PacketGenerator 모듈의 ArrayType[] 에 등록하면 상수로 초기화할 수 있습니다.
+	문자형은 char/CHAR, wchar_t/WCHAR, std::string, std::wstring 을 지원합니다.
+	구조체및 고정배열을 지원을 위해 CMsg을 구현하였습니다.
+	주석은 한줄을 할애하세요. 코드 뒤의 주석은 인지하지 못합니다.
+
+	//c# 코드에 추가
+	rename cs(std::string, System.String);	: c# 코드에 std::string을 System.String으로 대체합니다.
+	using System.XXX;						: c# 코드에 using System.XXX가 추가됩니다.
+	//c++ 코드에 추가(추후예정)
+	include "abc.h";						: c++코드에 #include "abc.h" 추가됩니다. ( <>도 지원 )
+	
+	array(char name[100]) 지원합니다.
+	vector 지원합니다.
+	list는 아직 지원하지 않습니다. 추후 예정입니다.
+
+	[id=0xA0] : 프로토콜의 번호를 부여할 수 있습니다(global 값에 합산(+))
+				, 이후의 프로토콜은 부여된 번호와 연속성을 갖습니다
+	[udp] : core에서 지원되는 udp
+	[unreliable] : 패킷의 도착을 보장하지 않는다.(default:reliable)
+	[encrypt] : 암호화 설정
+	
+	PT_VERSION : 프로토콜 버전( type:PROTOCOL_T )
+
+	p.s.
+		후미 첨자 : REQ-요청패킷, ACK-응답패킷(one target), NTF-요청없이 전달패킷(Notify)
+		[id=0x1234,udp,unreliable,encrypt] 순서 준수할 것
+
+	//프로젝트에 추가설정
+	1. pidl에 등록된 "NetC2S.txt"의 속성 ->Configuration Properties->General->Item Type을 "Custom Build Tool"로 변경
+	2. Custom Build Tool->Command Line에 ["../PacketGenerator.exe" "%(FullPath)" -path "../pidl"] 추가 ([ ]는 제외)
+	3. Custom Build Tool->Outputs에 [%(Filename)_Structure.h;%(Filename)_Protocol.h;%(Filename)_RecvPacket.h;%(Filename)_SendPacket.h;] 추가 ([ ]는 제외)
+*/
+
+PT_VERSION = 20210222
+
+global NetC2C 0xFF00
+{
+	//NetCore.h로 이동함
+	//peer hole punching
+	//	remoteFrom : 홀펀칭을 시도하는 host(서버에서 할당받은 자신의 host id)
+	//	remoteTo : 서버에서 할당받은 타인의 host id
+	//	bpublic : enPrivateAttempt ??, enPublicAttempt ?? (public으로 홀펀칭 시도인가?)
+	[udp,unreliable,encrypt] CORE_UDP_HOLE_PUNCHING_PEER_REQ(HOSTID remoteFrom, HOSTID remoteTo, UINT8 bpublic)
+
+	//NetCore.h로 이동함
+	//peer hole punching 결과
+	//	remoteFrom : 홀펀칭을 시도하는 host(서버에서 할당받은 자신의 host id)
+	//	remoteTo : 서버에서 할당받은 타인의 host id
+	//	bpublic : enPrivateAttempt ??, enPublicAttempt ?? (public으로 홀펀칭 시도인가?)
+	[udp,unreliable,encrypt] CORE_UDP_HOLE_PUNCHING_PEER_ACK(HOSTID remoteFrom, HOSTID remoteTo, UINT8 bpublic)
+
+};

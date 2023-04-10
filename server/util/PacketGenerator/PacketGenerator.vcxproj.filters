@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="tinyxml">
+      <UniqueIdentifier>{b0551f56-820f-4abd-bc54-10ac95fc022d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hisutil">
+      <UniqueIdentifier>{fa34c27f-d6c7-4a66-82c2-fc78bb524dd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hisutil\module">
+      <UniqueIdentifier>{956a8781-d581-4565-8b2f-6a43a8c7eb39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hisutil\etc">
+      <UniqueIdentifier>{cc664ec5-ea07-4da7-98a7-0c71d3ef72b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hisutil\thread">
+      <UniqueIdentifier>{210f2ecc-5856-4416-9f6c-34556ede9fd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="config">
+      <UniqueIdentifier>{77c75274-244a-4fb9-94f1-642c25a9dafe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hisutil\eventlog">
+      <UniqueIdentifier>{40b3fc41-1259-408c-bac5-bdfe7fa0faaa}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="PacketGenerator.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tinyxml\tinystr.cpp">
+      <Filter>tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tinyxml\tinyxml.cpp">
+      <Filter>tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tinyxml\tinyxmlerror.cpp">
+      <Filter>tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tinyxml\tinyxmlparser.cpp">
+      <Filter>tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hisutil\module\module.cpp">
+      <Filter>hisutil\module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hisutil\etc\string.cpp">
+      <Filter>hisutil\etc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hisutil\thread\Thread.cpp">
+      <Filter>hisutil\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hisutil\thread\HisCritSec.cpp">
+      <Filter>hisutil\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hisutil\eventlog\eventlog.cpp">
+      <Filter>hisutil\eventlog</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PacketGenerator.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tinyxml\tinystr.h">
+      <Filter>tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tinyxml\tinyxml.h">
+      <Filter>tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hisutil\module\module.h">
+      <Filter>hisutil\module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hisutil\etc\string.h">
+      <Filter>hisutil\etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hisutil\thread\HisCritSec.h">
+      <Filter>hisutil\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hisutil\thread\Singleton.h">
+      <Filter>hisutil\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hisutil\thread\Thread.h">
+      <Filter>hisutil\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hisutil\eventlog\eventlog.h">
+      <Filter>hisutil\eventlog</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="config\PacketGenerator.xml">
+      <Filter>config</Filter>
+    </Xml>
+  </ItemGroup>
+</Project>
